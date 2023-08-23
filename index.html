@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylee.css">
+  <title>Security</title>
+</head>
+
+<body>
+
+  <!--header-->
+  <header>
+    <div class="nav-content">
+      <div class="container">
+              <div class="nav flex">
+                  <a href="index.html">
+                      <div class="logo">Security</div>
+                  </a>
+                      <ul class="flex">
+                          <li><a href="index.html">Home</a></li>
+                          <li><a href="about.html">About</a></li>
+                          <li class="flex dropdown">
+                            <a style="color: white;" class="flex dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                              data-bs-toggle="dropdown" aria-expanded="false">
+                              More
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="https://portswigger.net/web-security/sql-injection#second-order-sql-injection">Second-order SQL injection</a></li>
+                              <li><a class="dropdown-item" href="https://portswigger.net/web-security/sql-injection#retrieving-hidden-data">Retrieving hidden data</a></li>
+                        
+                              <li><a class="dropdown-item" href="https://www.w3schools.com/sql/sql_injection.asp">Another source</a></li>
+                            </ul>
+              
+                          <li><a href="#123">Contact</a></li>
+                      </ul>
+                      <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-light" type="submit">Search</button>
+                      </form>
+               
+            
+              </div>
+      </div>     
+  </div>
+  </header>
+
+
+  <!--the big image -->
+
+  <div id="carouselExampleCaptions" class="carousel-slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+         aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="1_1VZVZIMCmTw0QUVA0Y_uYA.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="cybersecurityistock-1132228216valerybrozhinsky.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="maxresdefault.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!--title and paragraph-->
+  <section class="describ">
+    <br/>
+    <h1 class="text-center">SQL injection attack</h1>
+    <div class="text1">
+    <p class="text-center"><br /> SQL
+      injection (SQLi) is a web security vulnerability that allows an attacker to interfere with the queries that an
+      application makes to its database. It generally allows an attacker to view data that they are not normally able to
+      retrieve. This might include data belonging to other users, or any other data that the application itself is able
+      to access. In many cases, an attacker can modify or delete this data, causing persistent changes to the
+      application's content or behavior.</p>
+    </div>
+  </section>
+
+  <!--the cards-->
+ 
+  <div class="row" style=" margin-left: auto;margin-right: auto;">
+    <!--SQL injection UNION attacks-->
+    
+    <div class="ca1" style="width: 25%;">
+      <div class="card1">
+      <div class="card">
+        <img src="sql-injection.jpg" class="card-img-top">
+        <div class="card-body text-center">
+          <h5 class="card-title">SQL injection UNION attacks</h5>
+          <p class="card-text">When an application is vulnerable to SQL injection and the results of the query are
+            returned within the application's responses, the UNION keyword can be used to retrieve data from other
+            tables within the database. This results in a SQL injection UNION attack.</p>
+          <br>
+            <a href="https://portswigger.net/web-security/sql-injection/union-attacks" class="btn btn-dark ">Learn
+              more</a>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!--Blind SQL injection-->
+    <div class="ca1" style="width: 25%;">
+      <div class="card1">
+      <div class="card">
+        <img src="1_WqE3aUUXTRMN3pRfyeubCw.jpg" class="card-img-top">
+        <div class="card-body text-center">
+          <h5 class="card-title ">Blind SQL injection</h5>
+          <p class="card-text">Blind SQL injection arises when an application is vulnerable to SQL injection, but its
+            HTTP responses do not contain the results of the relevant SQL query or the details of any database errors.
+            With blind SQL injection vulnerabilities, many techniques such as U...</p>
+          <br>
+          <br>
+            <a href="https://portswigger.net/web-security/sql-injection/blind" class="btn btn-dark ">Learn more</a>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!--Error-based SQL injection-->
+    <div class="ca1" style="width: 25%;">
+      <div class="card1">
+      <div class="card">
+        <img src="Error-Based-SQL-Injection.png" class="card-img-top">
+        <div class="card-body text-center">
+          <h5 class="card-title">Error-based SQL injection</h5>
+          <p class="card-text">Error-based SQL injection refers to cases where you're able to use error messages to
+            either extract or infer sensitive data from the database, even in blind contexts. The possibilities depend
+            largely on the configuration of the database and the types of errors you're able to trigger.</p>
+          <br>
+            <a href="https://portswigger.net/web-security/sql-injection/blind#error-based-sql-injection"
+              class="btn btn-dark">Learn more</a>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!--Examining the database in SQL injection attacks-->
+    <div class="ca1" style="width: 25%;">
+      <div class="card1">
+      <div class="card">
+        <img src="SQL-Injection-Attack (1).jpg" class="card-img-top">
+        <div class="card-body text-center">
+          <h5 class="card-title">Examining the database in SQL injection attacks</h5>
+          <p class="card-text">When exploiting SQL injection vulnerabilities, it is often necessary to gather some
+            information about the database itself. This includes the type and version of the database software, and the
+            contents of the database in terms of which tables and columns it contains.</p>
+          <br>
+            <a href="https://portswigger.net/web-security/sql-injection/examining-the-database"
+              class="btn btn-dark ">Learn more</a>
+        </div>
+      </div>
+      </div>
+    </div>
+
+  </div>
+  <br />
+  <!--contact us footer-->
+  
+  <footer class="bg-dark text-center text-white" id="123">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <header class="he mb-4 blockquote-footer">
+        Contact Us:
+    </header>
+      <!-- Section: Social media -->
+      <div class="foo">
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" style="background-color: #3B5998;" href="https://www.facebook.com/mohammad.attoun.54?mibextid=LQQJ4d" role="button">Facebook</a>
+  
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" style="background-color: #55ACEE;" href="https://twitter.com/MohammadAtoun?t=EwNi70LH2aB5X9Op163OCg&s=07" role="button">Twitter</a>
+  
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" style="background-color: #dd4b39;" href=" mailto: mohammadattoun75@gmail.com" role="button">Email</a>
+  
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" style="background-color: #125688;" href="https://instagram.com/mohammad_att._?igshid=MjEwN2IyYWYwYw==" role="button">Instagram</a>
+  
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" style="background-color: #007bb5;" href="https://www.linkedin.com/in/mohammad-attoun-61a78521a" role="button">Linkedin</a>
+        <!--Tel-->
+        <a class="btn btn-outline-light btn-floating m-1" style="background-color:green;" href="tel:+692-790854892">Tel</a>
+  
+      </section>
+    </div>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3 bg-dark">
+      © 2023 Copyright:
+      <a class="text-white" href="file:///E:/security/index.html">file:///E:/security/index.html</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+  <!--script link-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
